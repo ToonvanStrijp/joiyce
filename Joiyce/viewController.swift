@@ -36,7 +36,7 @@ class ViewController: LuminaViewController {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.delegate = self
-        self.streamingModelTypes = [DefaultCustomModel_1336116900()]
+        self.streamingModelTypes = [SignLanguage_1303887258()]
         self.setShutterButton(visible: false)
         self.setTorchButton(visible: true)
         self.setCancelButton(visible: false)
@@ -120,19 +120,15 @@ extension ViewController: LuminaDelegate {
                 return
             }
             
-            self.textPrompt = "Detecting: \(bestName) \(bestConfidence * 100)%"
+//            self.textPrompt = "Detecting: \(bestName) \(bestConfidence * 100)%"
             
             self.previousResult = bestName
             
             if(bestName == "speak"){
-                let say = self.speakBuffer.joined(separator: " ")
-                
-                speakPendingText(text: say)
-                getTone(str: say)
-                
-                self.speakBuffer = []
+                return;
             }else{
-                self.speakBuffer.append((filteredConfigObjects.first?.getText())!)
+                speakPendingText(text: (filteredConfigObjects.first?.getText())!)
+                getTone(str: (filteredConfigObjects.first?.getText())!)
             }
         } else {
             continueScanning()
@@ -152,7 +148,7 @@ extension ViewController {
     }
     
     func updateObjectUI(for label: String) {
-        textPrompt = "You found the \(label)!"
+//        textPrompt = "You found the \(label)!"
     }
 }
 
