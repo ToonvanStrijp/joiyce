@@ -1,0 +1,21 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+    {
+      "name" : "BMSCore",
+      "hash" : "743203962ed65caaa0a688d73dac6b6727b6016fb13fb81aad07cbe52e830c6a"
+    }
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "2.3.5",
+  "iOS" : [
+    {
+      "name" : "BMSCore",
+      "hash" : "d8ae433897ac0363eece7f0ac403023660f2d7a13d9b19e449b3ce0c1afbc266"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "7d829dc1f2324579b5c3f331a59cbac7dcb24194",
+  "iOS" : [
+    {
+      "name" : "Lumina",
+      "hash" : "dea38764e2e663b11616e8db310136ecb14526d06c812d0adffe0e5b9c3605c5"
+    }
+  ]
+}

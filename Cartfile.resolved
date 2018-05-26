@@ -1,0 +1,3 @@
+github "daltoniam/Starscream" "3.0.5"
+github "dokun1/Lumina" "7d829dc1f2324579b5c3f331a59cbac7dcb24194"
+github "watson-developer-cloud/swift-sdk" "v0.26.0"

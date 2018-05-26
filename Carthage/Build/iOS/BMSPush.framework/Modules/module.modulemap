@@ -1,0 +1,11 @@
+framework module BMSPush {
+  umbrella header "BMSPush.h"
+
+  export *
+  module * { export * }
+}
+
+module BMSPush.Swift {
+    header "BMSPush-Swift.h"
+    requires objc
+}
